@@ -1,0 +1,126 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    background: rgb(255, 255, 255);
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.philosopher-button {
+    display: block;
+    margin: 10px auto;
+    padding: 10px 20px;
+    font-size: 18px;
+    color: white;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.philosopher-button:hover {
+    background-color: #0056b3;
+}
+
+.fazit {
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+audio {
+    margin-top: 20px;
+}
+
+.audio-list-item {
+    margin: 5px 0;
+}
+
+.audio-list-item button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 40px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.audio-list-item button:hover {
+    background-color: #218838;
+}
+
+.back-button {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    padding: 5px 10px;
+    font-size: 24px;
+    color: black;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Hintergrundbild für die Philosophen-Seite */
+.background-image {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('path/to/your/philosopher-image.jpg') no-repeat center center;
+    background-size: cover;
+    opacity: 0.1;
+    /* Schwach sichtbar machen */
+    z-index: -1;
+    /* Hinter den anderen Inhalten platzieren */
+}
+
+/* Sicherstellen, dass der Container über dem Hintergrundbild liegt */
+.container {
+    position: relative;
+    z-index: 1;
+    padding: 20px;
+}
+
+/* Stil für den Zurück-Button */
+.back-button {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    padding: 5px 10px;
+    font-size: 24px;
+    color: black;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+/* Versteckte Elemente */
+.hidden {
+    display: none;
+}
+
+/* Stil für die Audio-Listen-Elemente */
+.audio-list-item {
+    margin-bottom: 10px;
+}
